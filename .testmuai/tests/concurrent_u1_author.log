@@ -1,0 +1,232 @@
+{"type":"test_md_step_start","step_index":1,"heading":"Step 1","ref":null}
+{"type":"bifurcation","flows":["Go to http://localhost:3000"],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"Go to http://localhost:3000","timestamp":1780185210}
+{"type":"step_event","index":0,"event":"cm_init","detail":"atomic objective","checkpoint_count":0}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"https://kaneai-playground.lambdatest.io/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 0 pending","all_passed":true}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Navigating to http://localhost:3000","action_type":"navigate"}
+{"type":"step_event","index":1,"event":"action","detail":"PRIMARY: Navigate to http://localhost:3000","action_type":"navigate","success":true}
+{"type":"step_end","index":1,"status":"passed","duration":12.9,"summary":"navigate: PRIMARY: Navigate to http://localhost:3000"}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"run_end","status":"passed","summary":"Opened the website at http://localhost:3000.\nReached the homepage successfully.","one_liner":"navigated to localhost:3000","final_state":{"url":"http://localhost:3000/"},"reason":"Objective completed","duration":20.5,"bifurcated":false,"total_runs":1,"context":{"memory":{},"variables":{},"pointer":"(passed) navigated to localhost:3000"},"credits_consumed":3.4105250000000003,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/0","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Opened the website at http://localhost:3000.\nReached the homepage successfully.","one_liner":"navigated to localhost:3000","credits_consumed":3.4105250000000003}]}
+{"type":"test_md_step_end","step_index":1,"status":"passed","duration_s":20.5,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":2,"heading":"Step 2","ref":null}
+{"type":"bifurcation","flows":["Sign up a fresh user: click \"Sign up\", then type the email {{global.email}} into the email field, then type the password grass1234, then type the display name {{global.displayName}}, then click \"Sign up\" to submit."],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"Sign up a fresh user: click \"Sign up\", then type the email {{global.email}} into the email field, then type the password grass1234, then type the display name {{global.displayName}}, then click \"Sign up\" to submit.","timestamp":1780185232}
+{"type":"step_event","index":0,"event":"cm_init","detail":"extracted 1 checkpoints","checkpoint_count":1}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Opening the Sign up form tab","action_type":"click"}
+{"type":"step_event","index":1,"event":"action","detail":"Clicked via DOM locator: internal:role=tab[name=\"Sign up\"i]","action_type":"click","success":true,"method":"dom_action"}
+{"type":"step_end","index":1,"status":"passed","duration":18.1,"summary":"click: Clicked via DOM locator: internal:role=tab[name=\"Sign up\"i]"}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":2,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":2,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Typing the display name into the sign-up form","action_type":"type"}
+{"type":"step_event","index":2,"event":"action","detail":"Filled '{{global.displayName}}' via DOM locator: internal:role=textbox[name=\"Display name\"i]","action_type":"type","success":true,"method":"dom_action"}
+{"type":"step_end","index":2,"status":"passed","duration":16.6,"summary":"type: Filled '{{global.displayName}}' via DOM locator: internal:role=textbox[name=\"Dis"}
+{"type":"step_start","index":3,"objective":"Step 3"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":3,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":3,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Typing email into the Email field","action_type":"type"}
+{"type":"step_event","index":3,"event":"action","detail":"Filled '{{global.email}}' via DOM locator: internal:role=textbox[name=\"Email\"i]","action_type":"type","success":true,"method":"dom_action"}
+{"type":"step_end","index":3,"status":"passed","duration":5.9,"summary":"type: Filled '{{global.email}}' via DOM locator: internal:role=textbox[name=\"Email\"i]"}
+{"type":"step_start","index":4,"objective":"Step 4"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":4,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":4,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":4,"event":"reasoning","detail":"Typing password into the Password field","action_type":"type"}
+{"type":"step_event","index":4,"event":"action","detail":"Filled 'grass1234' via DOM locator: internal:role=textbox[name=\"Password\"i]","action_type":"type","success":true,"method":"dom_action"}
+{"type":"step_end","index":4,"status":"passed","duration":7.2,"summary":"type: Filled 'grass1234' via DOM locator: internal:role=textbox[name=\"Password\"i]"}
+{"type":"step_start","index":5,"objective":"Step 5"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":5,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":5,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":5,"event":"reasoning","detail":"Clicking the Sign up button to submit registration","action_type":"click"}
+{"type":"step_event","index":5,"event":"action","detail":"Clicked via DOM locator: internal:role=button[name=\"Sign up\"i]","action_type":"click","success":true,"method":"dom_action"}
+{"type":"step_end","index":5,"status":"passed","duration":18.8,"summary":"click: Clicked via DOM locator: internal:role=button[name=\"Sign up\"i]"}
+{"type":"step_start","index":6,"objective":"Step 6"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":6,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":6,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":6,"event":"reasoning","detail":"Waiting briefly before final verification","action_type":"wait"}
+{"type":"step_event","index":6,"event":"action","detail":"PRIMARY: wait 500 ms","action_type":"wait","success":true}
+{"type":"step_end","index":6,"status":"passed","duration":12.8,"summary":"wait: PRIMARY: wait 500 ms"}
+{"type":"step_start","index":7,"objective":"Step 7"}
+{"type":"step_event","index":7,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":7,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":7,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":7,"event":"reasoning","detail":"Verifying that registration is complete","action_type":"analyze"}
+{"type":"step_event","index":7,"event":"action","detail":"Verifying the Home feed screen is visible (header shows \"Home\" at the top).","action_type":"analyze","success":true}
+{"type":"step_end","index":7,"status":"passed","duration":18.7,"summary":"analyze: ANALYZE(visual, 'PRIMARY: the Home feed screen is visible | HINTS: header shows "}
+{"type":"step_start","index":8,"objective":"Step 8"}
+{"type":"step_event","index":8,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":8,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":8,"event":"assertion","detail":"Sign up a fresh user: click \"Sign up\", then type the email {{global.email}} into the email field, then type the password grass1234, then type the display name {{global.displayName}}, then click \"Sign up\" to submit.","passed":true}
+{"type":"step_end","index":8,"status":"passed","duration":0,"summary":"assert: Sign up a fresh user: click \"Sign up\", then type the email {{global.email}} into"}
+{"type":"run_end","status":"passed","summary":"Opened the Sign up form.\nEntered the provided email, the password \"grass1234\", and the provided display name.\nSubmitted the registration and reached the Home feed screen (\"Home\" header visible), indicating sign-up succeeded.","one_liner":"signed up a new user on localhost","final_state":{"url":"http://localhost:3000/","signed_up_successfully":"true"},"reason":"Objective completed","duration":110,"bifurcated":false,"total_runs":1,"context":{"memory":{"__cp_final":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"The screenshot shows a feed layout with the header text \"Home\" at the top, indicating the Home feed screen is visible.","analyzer_type":"visual","step":7,"query":"PRIMARY: the Home feed screen is visible | HINTS: header shows \"Home\" at the top Always answer true/false, nothing else.","condition":"Verify: PRIMARY: the Home feed screen is visible | HINTS: header shows \"Home\" at the top Always answer true/false, nothing else.","human_description":"Verifying the Home feed screen is visible (header shows \"Home\" at the top)."}},"variables":{"global.email":{"value":"kane-concurrent-u1-0@example.com","secret":false,"syntax":"{{global.email}}","type":"global"},"global.displayName":{"value":"Kane Concurrent One","secret":false,"syntax":"{{global.displayName}}","type":"global"},"__cp_final":{"syntax":"{{__cp_final}}","value":"true","type":"memory","secret":false}},"pointer":"(passed) signed up a new user on localhost"},"credits_consumed":24.596214999999994,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/1","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Opened the Sign up form.\nEntered the provided email, the password \"grass1234\", and the provided display name.\nSubmitted the registration and reached the Home feed screen (\"Home\" header visible), indicating sign-up succeeded.","one_liner":"signed up a new user on localhost","credits_consumed":24.596214999999994}]}
+{"type":"test_md_step_end","step_index":2,"status":"passed","duration_s":110,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":3,"heading":"Step 3","ref":null}
+{"type":"bifurcation","flows":["Open the log dialog by clicking the center Log control in the bottom navigation bar."],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"Open the log dialog by clicking the center Log control in the bottom navigation bar.","timestamp":1780185344}
+{"type":"step_event","index":0,"event":"cm_init","detail":"atomic objective","checkpoint_count":0}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 0 pending","all_passed":true}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Clicking the center Log button in the bottom navigation","action_type":"click"}
+{"type":"step_event","index":1,"event":"action","detail":"Clicked via DOM locator: internal:role=button[name=\"Log a hangout\"i]","action_type":"click","success":true,"method":"dom_action"}
+{"type":"step_end","index":1,"status":"passed","duration":15.9,"summary":"click: Clicked via DOM locator: internal:role=button[name=\"Log a hangout\"i]"}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"run_end","status":"passed","summary":"Goal: open the log dialog from the bottom navigation bar.\nClicked the center “Log” control in the bottom navigation bar.\nThe log dialog opened successfully, and the run finished on http://localhost:3000/.","one_liner":"opened the log dialog on localhost","final_state":{"url":"http://localhost:3000/"},"reason":"Objective completed","duration":24.1,"bifurcated":false,"total_runs":1,"context":{"memory":{},"variables":{},"pointer":"(passed) opened the log dialog on localhost"},"credits_consumed":5.113729999999999,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/2","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Goal: open the log dialog from the bottom navigation bar.\nClicked the center “Log” control in the bottom navigation bar.\nThe log dialog opened successfully, and the run finished on http://localhost:3000/.","one_liner":"opened the log dialog on localhost","credits_consumed":5.113729999999999}]}
+{"type":"test_md_step_end","step_index":3,"status":"passed","duration_s":24.1,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":4,"heading":"Step 4","ref":null}
+{"type":"bifurcation","flows":["In the open \"Log a hangout\" dialog: set the photo file input to the local file at .testmuai/tests/fixtures/hangout.jpg, then click the \"Gym\" activity option (worth 20 points). Do not close or dismiss the dialog."],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"In the open \"Log a hangout\" dialog: set the photo file input to the local file at .testmuai/tests/fixtures/hangout.jpg, then click the \"Gym\" activity option (worth 20 points). Do not close or dismiss the dialog.","timestamp":1780185371}
+{"type":"step_event","index":0,"event":"cm_init","detail":"extracted 1 checkpoints","checkpoint_count":1}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Uploading hangout photo file","action_type":"tool_call"}
+{"type":"step_event","index":1,"event":"action","detail":"Uploading hangout photo file","action_type":"tool_call","success":true}
+{"type":"step_end","index":1,"status":"passed","duration":12.4,"summary":"tool_call: Called external tool: file_upload with parameters: {'backend_dom_node_id': 961, "}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":2,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":2,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Clicking the Gym activity option","action_type":"click"}
+{"type":"step_event","index":2,"event":"vision","detail":"click at (1056, 553)"}
+{"type":"step_event","index":2,"event":"action","detail":"PRIMARY: Activity option; role=button; text=\"Gym\" | HINTS: section=Activity; right-side card showing \"20 points\"","action_type":"click","success":true}
+{"type":"step_end","index":2,"status":"passed","duration":19.1,"summary":"click: PRIMARY: Activity option; role=button; text=\"Gym\" | HINTS: section=Activity; rig"}
+{"type":"step_start","index":3,"objective":"Step 3"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":3,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":3,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Confirming Gym selection and marking step complete","action_type":"wait"}
+{"type":"step_event","index":3,"event":"action","detail":"PRIMARY: wait briefly while confirming the Gym activity selection remains applied","action_type":"wait","success":true}
+{"type":"step_end","index":3,"status":"passed","duration":13.9,"summary":"wait: PRIMARY: wait briefly while confirming the Gym activity selection remains applie"}
+{"type":"step_start","index":4,"objective":"Step 4"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":4,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":4,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":4,"event":"reasoning","detail":"Verifying the photo upload and Gym selection are visible","action_type":"analyze"}
+{"type":"step_event","index":4,"event":"action","detail":"Verifying the “Gym” activity option is shown selected (highlighted) in the Activity section of the “Log a hangout” dialog.","action_type":"analyze","success":true}
+{"type":"step_end","index":4,"status":"passed","duration":22.4,"summary":"analyze: ANALYZE(visual, 'PRIMARY: the “Gym” activity option is shown selected (highlight"}
+{"type":"step_start","index":5,"objective":"Step 5"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":5,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":5,"event":"assertion","detail":"In the open \"Log a hangout\" dialog: set the photo file input to the local file at .testmuai/tests/fixtures/hangout.jpg, then click the \"Gym\" activity option (worth 20 points). Do not close or dismiss the dialog.","passed":true}
+{"type":"step_end","index":5,"status":"passed","duration":0,"summary":"assert: In the open \"Log a hangout\" dialog: set the photo file input to the local file a"}
+{"type":"run_end","status":"passed","summary":"Opened the “Log a hangout” dialog and uploaded the hangout photo (hangout.jpg).\nIn the Activity section, selected the “Gym” option and left the dialog open.","one_liner":"uploaded a hangout photo and selected the Gym activity on localhost","final_state":{"url":"http://localhost:3000/","gym_selected_checkpoint":"true"},"reason":"Objective completed","duration":78.8,"bifurcated":false,"total_runs":1,"context":{"memory":{"__cp_final":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"In the Activity section, the 'Gym' option has a green highlighted border/background indicating it is selected compared to the other activity buttons.","analyzer_type":"visual","step":4,"query":"PRIMARY: the “Gym” activity option is shown selected (highlighted) | HINTS: Activity section in the “Log a hangout” dialog Always answer true/false, nothing else.","condition":"Verify: PRIMARY: the “Gym” activity option is shown selected (highlighted) | HINTS: Activity section in the “Log a hangout” dialog Always answer true/false, nothing else.","human_description":"Verifying the “Gym” activity option is shown selected (highlighted) in the Activity section of the “Log a hangout” dialog."}},"variables":{"__cp_final":{"syntax":"{{__cp_final}}","value":"true","type":"memory","secret":false}},"pointer":"(passed) uploaded a hangout photo and selected the Gym activity on localhost"},"credits_consumed":18.23652,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/3","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Opened the “Log a hangout” dialog and uploaded the hangout photo (hangout.jpg).\nIn the Activity section, selected the “Gym” option and left the dialog open.","one_liner":"uploaded a hangout photo and selected the Gym activity on localhost","credits_consumed":18.23652}]}
+{"type":"test_md_step_end","step_index":4,"status":"passed","duration_s":78.8,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":5,"heading":"Step 5","ref":null}
+{"type":"bifurcation","flows":["Click the \"Log it\" button to submit the hangout. The dialog should close on its own after a successful submit — do not dismiss it by clicking the backdrop."],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"Click the \"Log it\" button to submit the hangout. The dialog should close on its own after a successful submit — do not dismiss it by clicking the backdrop.","timestamp":1780185453}
+{"type":"step_event","index":0,"event":"cm_init","detail":"extracted 2 checkpoints","checkpoint_count":2}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Clicking the \"Log it\" button to submit the hangout","action_type":"click"}
+{"type":"step_event","index":1,"event":"action","detail":"Clicked via DOM locator: internal:role=dialog >> internal:role=button[name=\"Log it\"i]","action_type":"click","success":true,"method":"dom_action"}
+{"type":"step_end","index":1,"status":"passed","duration":15.8,"summary":"click: Clicked via DOM locator: internal:role=dialog >> internal:role=button[name=\"Log "}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":2,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":2,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Waiting for the Log a hangout dialog to close","action_type":"wait"}
+{"type":"step_event","index":2,"event":"action","detail":"PRIMARY: wait for the hangout submission to finish and the \"Log a hangout\" modal to close automatically","action_type":"wait","success":true}
+{"type":"step_end","index":2,"status":"passed","duration":13,"summary":"wait: PRIMARY: wait for the hangout submission to finish and the \"Log a hangout\" modal"}
+{"type":"step_start","index":3,"objective":"Step 3"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":3,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":3,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Checking whether the log hangout dialog closed after submit","action_type":"analyze"}
+{"type":"step_event","index":3,"event":"action","detail":"Checking whether the \"Log a hangout\" modal dialog is closed after submitting \"Log it\".","action_type":"analyze","success":true}
+{"type":"step_end","index":3,"status":"passed","duration":11.9,"summary":"analyze: ANALYZE(visual, 'PRIMARY: Is the \"Log a hangout\" modal dialog closed (i.e., no m"}
+{"type":"step_start","index":4,"objective":"Step 4"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":4,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":4,"event":"assertion","detail":"The dialog should close on its own after a successful submit","passed":true}
+{"type":"step_end","index":4,"status":"passed","duration":0,"summary":"assert: The dialog should close on its own after a successful submit"}
+{"type":"step_start","index":5,"objective":"Step 5"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":5,"event":"evaluation","detail":"checkpoints: 1 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":5,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":5,"event":"reasoning","detail":"Verifying the hangout log dialog is closed after submit","action_type":"analyze"}
+{"type":"step_event","index":5,"event":"action","detail":"Verifying the Home feed screen is visible and no “Log it” submission dialog is shown","action_type":"analyze","success":true}
+{"type":"step_end","index":5,"status":"passed","duration":13.3,"summary":"analyze: ANALYZE(visual, 'PRIMARY: the Home feed screen is visible (no “Log it” submissio"}
+{"type":"step_start","index":6,"objective":"Step 6"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":6,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":6,"event":"assertion","detail":"Click the \"Log it\" button to submit the hangout. The dialog should close on its own after a successful submit — do not dismiss it by clicking the backdrop.","passed":true}
+{"type":"step_end","index":6,"status":"passed","duration":0,"summary":"assert: Click the \"Log it\" button to submit the hangout. The dialog should close on its "}
+{"type":"run_end","status":"passed","summary":"Clicked the “Log it” button in the “Log a hangout” dialog to submit the hangout.\nAfter submitting, the dialog closed on its own and the Home feed screen was visible.","one_liner":"submitted a hangout on localhost:3000","final_state":{"url":"http://localhost:3000/","hangout_log_dialog_closed_after_submit":"true"},"reason":"Objective completed","duration":65,"bifurcated":false,"total_runs":1,"context":{"memory":{"hangout_log_dialog_closed_after_submit":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"The screen shows the Home feed with the header \"Home\" and the bottom navigation (Home/Leaderboard/+/Profile) fully visible, with no modal overlay or \"Log a hangout\" dialog panel present.","analyzer_type":"visual","step":3,"query":"PRIMARY: Is the \"Log a hangout\" modal dialog closed (i.e., no modal dialog/overlay visible) after clicking the \"Log it\" submit button? Answer true or false. | HINTS: the Home feed with header \"Home\" and bottom navigation should be fully visible without any modal panel on top.","condition":"Log a hangout dialog is closed (no modal dialog visible) after clicking \"Log it\" (expected: true)","human_description":"Checking whether the \"Log a hangout\" modal dialog is closed after submitting \"Log it\"."},"__cp_final":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"The screen shows a top header labeled “Home” with the feed content below (posts, comments) and no modal/dialog titled “Log it” is present.","analyzer_type":"visual","step":5,"query":"PRIMARY: the Home feed screen is visible (no “Log it” submission dialog shown) | HINTS: top shows “Home” header Always answer true/false, nothing else.","condition":"Verify: PRIMARY: the Home feed screen is visible (no “Log it” submission dialog shown) | HINTS: top shows “Home” header Always answer true/false, nothing else.","human_description":"Verifying the Home feed screen is visible and no “Log it” submission dialog is shown"}},"variables":{"hangout_log_dialog_closed_after_submit":{"syntax":"{{hangout_log_dialog_closed_after_submit}}","value":"true","type":"memory","secret":false},"__cp_final":{"syntax":"{{__cp_final}}","value":"true","type":"memory","secret":false}},"pointer":"(passed) submitted a hangout on localhost:3000"},"credits_consumed":16.788135,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/4","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Clicked the “Log it” button in the “Log a hangout” dialog to submit the hangout.\nAfter submitting, the dialog closed on its own and the Home feed screen was visible.","one_liner":"submitted a hangout on localhost:3000","credits_consumed":16.788135}]}
+{"type":"test_md_step_end","step_index":5,"status":"passed","duration_s":65,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":6,"heading":"Step 6","ref":null}
+{"type":"bifurcation","flows":["On the Home feed, verify that a new feed post appears with an image element that has a non-empty source, and that the post shows \"+20 points\". Verify no error message or error overlay is shown."],"count":1,"is_single_flow":true}
+{"type":"run_start","objective":"On the Home feed, verify that a new feed post appears with an image element that has a non-empty source, and that the post shows \"+20 points\". Verify no error message or error overlay is shown.","timestamp":1780185521}
+{"type":"step_event","index":0,"event":"cm_init","detail":"extracted 3 checkpoints","checkpoint_count":3}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 3 pending","all_passed":false}
+{"type":"step_event","index":1,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Confirming the newest post at the top of the Home feed","action_type":"wait"}
+{"type":"step_event","index":1,"event":"action","detail":"PRIMARY: wait briefly while confirming the newest (top) Home feed post is visible","action_type":"wait","success":true}
+{"type":"step_end","index":1,"status":"passed","duration":7.5,"summary":"wait: PRIMARY: wait briefly while confirming the newest (top) Home feed post is visibl"}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":2,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 3 pending","all_passed":false}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Checking whether the newest feed post has an image","action_type":"analyze"}
+{"type":"step_event","index":2,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":2,"event":"action","detail":"Checking whether a new feed post is visible and includes an image element with a non-empty source.","action_type":"analyze","success":true}
+{"type":"step_end","index":2,"status":"passed","duration":23.6,"summary":"analyze: ANALYZE(visual, 'PRIMARY: is a new feed post visible and includes an image eleme"}
+{"type":"step_start","index":3,"objective":"Step 3"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":3,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 3 pending","all_passed":false}
+{"type":"step_event","index":3,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Checking whether the top post shows +20 points","action_type":"analyze"}
+{"type":"step_event","index":3,"event":"action","detail":"Checking whether the newest Home feed post shows \"+20 points\".","action_type":"analyze","success":true}
+{"type":"step_end","index":3,"status":"passed","duration":11.1,"summary":"analyze: ANALYZE(visual, 'PRIMARY: is the newest Home feed post showing \"+20 points\" visi"}
+{"type":"step_start","index":4,"objective":"Step 4"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":4,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 3 pending","all_passed":false}
+{"type":"step_event","index":4,"event":"assertion","detail":"Verify that a new feed post appears with an image element that has a non-empty source, and that the post shows \"+20 points\".","passed":true}
+{"type":"step_end","index":4,"status":"passed","duration":0,"summary":"assert: Verify that a new feed post appears with an image element that has a non-empty s"}
+{"type":"step_start","index":5,"objective":"Step 5"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":5,"event":"evaluation","detail":"checkpoints: 1 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":5,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":5,"event":"reasoning","detail":"Checking that no error message or overlay is visible","action_type":"analyze"}
+{"type":"step_event","index":5,"event":"action","detail":"Checking whether no error message or error overlay is shown on the Home feed screen","action_type":"analyze","success":true}
+{"type":"step_end","index":5,"status":"passed","duration":10.9,"summary":"analyze: ANALYZE(visual, 'PRIMARY: is NO error message or error overlay shown on the Home"}
+{"type":"step_start","index":6,"objective":"Step 6"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":6,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 2 pending","all_passed":false}
+{"type":"step_event","index":6,"event":"assertion","detail":"Verify no error message or error overlay is shown.","passed":true}
+{"type":"step_end","index":6,"status":"passed","duration":0,"summary":"assert: Verify no error message or error overlay is shown."}
+{"type":"step_start","index":7,"objective":"Step 7"}
+{"type":"step_event","index":7,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":7,"event":"evaluation","detail":"checkpoints: 1 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":7,"event":"page_manager","detail":"blocked: none","page_ready":true}
+{"type":"step_event","index":7,"event":"reasoning","detail":"Running final verification check","action_type":"analyze"}
+{"type":"step_event","index":7,"event":"action","detail":"Verifying whether a Home feed post card is visible with an image displayed.","action_type":"analyze","success":true}
+{"type":"step_end","index":7,"status":"passed","duration":15,"summary":"analyze: ANALYZE(visual, 'PRIMARY: a Home feed post card is visible with an image display"}
+{"type":"step_start","index":8,"objective":"Step 8"}
+{"type":"step_event","index":8,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":8,"event":"evaluation","detail":"checkpoints: 0 passed, 0 failed, 1 pending","all_passed":false}
+{"type":"step_event","index":8,"event":"assertion","detail":"On the Home feed, verify that a new feed post appears with an image element that has a non-empty source, and that the post shows \"+20 points\". Verify no error message or error overlay is shown.","passed":true}
+{"type":"step_end","index":8,"status":"passed","duration":0,"summary":"assert: On the Home feed, verify that a new feed post appears with an image element that"}
+{"type":"run_end","status":"passed","summary":"Opened the Home feed and checked the newest post at the top of the list.\nConfirmed the top post includes an image that appears to be loaded (not blank).\nVerified the post shows “+20 points”.\nNo error message or overlay appeared on the page.","one_liner":"reviewed the newest Home feed post on localhost","final_state":{"url":"http://localhost:3000/","newest_post_has_image":"true","newest_post_shows_+20_points":"true","error_overlay_present":"false"},"reason":"Objective completed","duration":83.2,"bifurcated":false,"total_runs":1,"context":{"memory":{"new_feed_post_present_with_image_non_empty_src":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"On the Home feed, the top post card (Kane Concurrent One) is visible and contains a large photo/image displayed, indicating an image element is present with a non-empty source.","analyzer_type":"visual","step":2,"query":"PRIMARY: is a new feed post visible and includes an image element whose source is non-empty visible/present? answer true or false | HINTS: top post card under the \"Home\" header with a large photo","condition":"A new feed post is visible and includes an image element whose source is non-empty (expected: true)","human_description":"Checking whether a new feed post is visible and includes an image element with a non-empty source."},"new_feed_post_shows_plus_20_points":{"extracted_value":"true","operator":"equals","transforms":["strip","lowercase"],"reasoning":"In the top feed card under the \"Home\" header, the activity line beneath the image shows \"+20 points\" next to the label \"Gym\", indicating the newest post displays \"+20 points\".","analyzer_type":"visual","step":3,"query":"PRIMARY: is the newest Home feed post showing \"+20 points\" visible/present? answer true or false | HINTS: top post card under the \"Home\" header, near the activity label \"Gym\"","condition":"The new feed post shows \"+20 points\" (expected: true)","human_description":"Checking whether the newest Home feed post shows \"+20 points\"."},"no_error_message_or_overlay_shown":{"extracted_value":"true","operator":"equals","transforms":[],"reasoning":"The Home feed screen is visible with normal content cards and navigation; there is no red error text, toast, modal dialog, or any overlay covering the feed.","analyzer_type":"visual","step":5,"query":"PRIMARY: is NO error message or error overlay shown on the Home feed screen? answer true or false | HINTS: look for any red error text, toast, modal dialog, or overlay covering the feed","condition":"No error message or error overlay is shown on the Home feed (expected: true)","human_description":"Checking whether no error message or error overlay is shown on the Home feed screen"},"__cp_final":{"extracted_value":"true","operator":"equals","transforms":["strip","lowercase"],"reasoning":"In the Home feed near the top, a post card for 'Kane Concurrent One' is visible and contains a large image (ocean/water photo) displayed within the post.","analyzer_type":"visual","step":7,"query":"PRIMARY: a Home feed post card is visible with an image displayed | HINTS: main feed post near the top Always answer true/false, nothing else.","condition":"Verify: PRIMARY: a Home feed post card is visible with an image displayed | HINTS: main feed post near the top Always answer true/false, nothing else.","human_description":"Verifying whether a Home feed post card is visible with an image displayed."}},"variables":{"new_feed_post_present_with_image_non_empty_src":{"syntax":"{{new_feed_post_present_with_image_non_empty_src}}","value":"true","type":"memory","secret":false},"new_feed_post_shows_plus_20_points":{"syntax":"{{new_feed_post_shows_plus_20_points}}","value":"true","type":"memory","secret":false},"no_error_message_or_overlay_shown":{"syntax":"{{no_error_message_or_overlay_shown}}","value":"true","type":"memory","secret":false},"__cp_final":{"syntax":"{{__cp_final}}","value":"true","type":"memory","secret":false}},"pointer":"(passed) reviewed the newest Home feed post on localhost"},"credits_consumed":20.919839999999997,"session_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4","run_dir":"/Users/nori/.testmuai/kaneai/sessions/fd336f64-974c-4f70-85c4-5abda89a58c4/runs/5","result_code":100,"reason_code":"success.complete","per_flow_metadata":[{"result_code":"100","reason_code":"success.complete","error_message":null,"summary":"Opened the Home feed and checked the newest post at the top of the list.\nConfirmed the top post includes an image that appears to be loaded (not blank).\nVerified the post shows “+20 points”.\nNo error message or overlay appeared on the page.","one_liner":"reviewed the newest Home feed post on localhost","credits_consumed":20.919839999999997}]}
+{"type":"test_md_step_end","step_index":6,"status":"passed","duration_s":83.2,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_summary","overall_status":"passed","duration_s":398,"steps":{"total":6,"passed":6,"failed":0,"skipped":0,"replay_decisions":0,"author_decisions":6},"retries":{"triggered":false},"commit":{"committed":true,"reason":"ok","testcase_id":"01KSXMX1SGH0TSCTZ6XC8Q9DNY"},"artifacts":{"replaced":true},"upload":{"performed":true,"succeeded":true},"cancelled":false}
+{"type":"test_md_done","overall_status":"passed","duration_s":398,"session_id":"fd336f64-974c-4f70-85c4-5abda89a58c4"}

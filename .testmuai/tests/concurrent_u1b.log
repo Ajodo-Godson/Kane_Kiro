@@ -1,0 +1,54 @@
+{"type":"test_md_lock_state","phase":"acquired","scope":"preemptive"}
+{"type":"test_md_step_start","step_index":1,"heading":"Step 1","ref":null}
+{"type":"run_start","objective":"Go to http://localhost:3000","timestamp":1780184999}
+{"type":"step_event","index":0,"event":"replay_started","detail":"replaying 1 actions","recording_length":1}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"https://kaneai-playground.lambdatest.io/"}
+{"type":"step_event","index":1,"event":"action","detail":"Navigate to http://localhost:3000","action_type":"navigate","success":true}
+{"type":"step_end","index":1,"status":"passed","duration":0.4,"summary":"navigate: Navigate to http://localhost:3000"}
+{"type":"run_end","status":"passed","summary":"","reason":"replay completed","duration":0.77,"final_url":"http://localhost:3000/","actions_executed":1,"screenshot_path":"/Users/nori/.testmuai/kaneai/sessions/b7333c02-10a1-4996-a0d5-b3ade6977349/runs/0/run-test/screenshots/step_001.png","run_dir":"/Users/nori/.testmuai/kaneai/sessions/b7333c02-10a1-4996-a0d5-b3ade6977349/runs/0/run-test","context":{"memory":{},"variables":{},"pointer":""},"variables_out":{},"store_out":{}}
+{"type":"test_md_step_end","step_index":1,"status":"passed","duration_s":0.77,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+{"type":"test_md_step_start","step_index":2,"heading":"Step 2","ref":null}
+{"type":"run_start","objective":"Sign up a fresh user: click \"Sign up\", then enter a brand-new email address that has never been used before by including a large random number, for example kane-concurrent-u1-<random-number>@example.com (generate a new random number each run), then enter the password grass1234 and the display name Kane Concurrent One, then click \"Sign up\" to submit.","timestamp":1780185001}
+{"type":"step_event","index":0,"event":"replay_started","detail":"replaying 9 actions","recording_length":9}
+{"type":"step_start","index":1,"objective":"Step 1"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":1,"event":"action","detail":"Opening the Sign up tab","action_type":"click","success":true}
+{"type":"step_end","index":1,"status":"passed","duration":0.2,"summary":"click: Opening the Sign up tab"}
+{"type":"step_start","index":2,"objective":"Step 2"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":2,"event":"action","detail":"Confirming the sign-up tab is active","action_type":"wait","success":true}
+{"type":"step_end","index":2,"status":"passed","duration":0.6,"summary":"wait: Confirming the sign-up tab is active"}
+{"type":"step_start","index":3,"objective":"Step 3"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":3,"event":"action","detail":"Typing the display name into the sign-up form","action_type":"fill","success":true}
+{"type":"step_end","index":3,"status":"passed","duration":0.2,"summary":"fill: Typing the display name into the sign-up form"}
+{"type":"step_start","index":4,"objective":"Step 4"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":4,"event":"action","detail":"Typing a unique email address into the Email field","action_type":"fill","success":true}
+{"type":"step_end","index":4,"status":"passed","duration":0.2,"summary":"fill: Typing a unique email address into the Email field"}
+{"type":"step_start","index":5,"objective":"Step 5"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":5,"event":"action","detail":"Typing the password into the Password field","action_type":"fill","success":true}
+{"type":"step_end","index":5,"status":"passed","duration":0.2,"summary":"fill: Typing the password into the Password field"}
+{"type":"step_start","index":6,"objective":"Step 6"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":6,"event":"action","detail":"Clicking the Sign up button to submit registration","action_type":"click","success":true}
+{"type":"step_end","index":6,"status":"passed","duration":0.2,"summary":"click: Clicking the Sign up button to submit registration"}
+{"type":"step_start","index":7,"objective":"Step 7"}
+{"type":"step_event","index":7,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":7,"event":"action","detail":"Waiting briefly to confirm the Home page is loaded","action_type":"wait","success":true}
+{"type":"step_end","index":7,"status":"passed","duration":0.6,"summary":"wait: Waiting briefly to confirm the Home page is loaded"}
+{"type":"step_start","index":8,"objective":"Step 8"}
+{"type":"step_event","index":8,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":8,"event":"action","detail":"Verifying that the Home feed screen is visible.","action_type":"analyze","success":true}
+{"type":"step_end","index":8,"status":"passed","duration":9.3,"summary":"analyze: Verifying that the Home feed screen is visible."}
+{"type":"step_start","index":9,"objective":"Step 9"}
+{"type":"step_event","index":9,"event":"screenshot","detail":"http://localhost:3000/"}
+{"type":"step_event","index":9,"event":"assertion","detail":"Sign up a fresh user: click \"Sign up\", then enter a brand-new email address that has never been used before by including a large random number, for example kane-concurrent-u1-<random-number>@example.com (generate a new random number each run), then enter the password grass1234 and the display name Kane Concurrent One, then click \"Sign up\" to submit.","passed":false}
+{"type":"step_end","index":9,"status":"failed","duration":0.6,"summary":"assert: Sign up a fresh user: click \"Sign up\", then enter a brand-new email address that"}
+{"type":"run_end","status":"failed","summary":"","reason":"assertion_failed: @ step 9","duration":12.38,"final_url":"http://localhost:3000/","actions_executed":9,"screenshot_path":"/Users/nori/.testmuai/kaneai/sessions/b7333c02-10a1-4996-a0d5-b3ade6977349/runs/1/run-test/screenshots/step_009.png","run_dir":"/Users/nori/.testmuai/kaneai/sessions/b7333c02-10a1-4996-a0d5-b3ade6977349/runs/1/run-test","context":{"memory":{},"variables":{"__cp_final":{"value":"false","secret":false}},"pointer":""},"variables_out":{"__cp_final":{"value":"false","secret":false}},"store_out":{}}
+{"type":"test_md_step_end","step_index":2,"status":"failed","duration_s":12.38,"ref_kind":null,"inlined_count":null,"failed_sub_step_index":null}
+[lock] run failed (failed); discarding new commit
+{"type":"test_md_summary","overall_status":"failed","duration_s":18,"steps":{"total":6,"passed":1,"failed":1,"skipped":4,"replay_decisions":2,"author_decisions":4},"retries":{"triggered":false},"commit":{"committed":false,"reason":"run_failed"},"artifacts":{"replaced":false},"upload":{"performed":true,"succeeded":true},"cancelled":false}
+{"type":"test_md_done","overall_status":"failed","duration_s":18,"session_id":"b7333c02-10a1-4996-a0d5-b3ade6977349"}
